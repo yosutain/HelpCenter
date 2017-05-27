@@ -1,0 +1,396 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	background:lightGray;
+	font-family: 'Raleway', sans-serif;
+	color:#333333;
+}
+
+ol { 
+	text-align:left;
+}
+ol li { 
+	width:100%;
+	list-style-type:lower-roman;
+}
+
+.ellipsis {
+	display: block;
+	width:100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.footerShadow {
+	box-shadow: inset 0 3pt 2pt rgba(0,0,0,.2);
+}
+
+button:focus {
+	outline:0 !important;
+}
+
+a:focus {
+	outline:0 !important;
+}
+
+li {
+	width:10%;
+}
+
+ul.nav-tabs li a{
+	margin-right: 0;
+}
+
+.glyphicon { 
+	font-size: 2vw;
+}
+
+@media all and (max-width: 395px) {
+	.glyphicon {
+		font-size: 8pt;
+	}
+	li {
+		width:20%;
+	}
+	li>a {
+		border-radius: 0pt !important;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.glyphicon {
+		font-size: 18pt;
+	}
+	li>a:after {
+		 content: attr(data-category);
+		 font-size: 12pt;
+		 position: relative;
+		 top: -5pt;
+	}
+}
+
+#aLi>a, #aLi.active>a, #aLi.active>a:hover, #aLi.active>a:focus {
+	color: #fff;
+	background-color: #B19CD9;
+	border: 1pt solid #B19CD9;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#A {
+	background-color: #B19CD9;
+	padding:5pt;
+	border: 1pt solid #B19CD9;
+}
+
+#ba {
+	color: #fff;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+#bLi>a, #bLi.active>a, #bLi.active>a:hover, #bLi.active>a:focus {
+	color: #fff;
+	background-color: #779ECB;
+	border: 1pt solid #779ECB;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#B {
+	background-color: #779ECB;
+	padding:5pt;
+	border: 1pt solid #779ECB;
+}
+
+.bCategories {
+	background-color: #6b96c7;
+	border-color: #6b96c7;
+	color: white;
+}
+
+#cLi>a, #cLi.active>a, #cLi.active>a:hover, #cLi.active>a:focus {
+	color: #fff;
+	background-color: #77DD77;
+	border: 1pt solid #77DD77;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#C {
+	background-color: #77DD77;
+	padding:5pt;
+	border: 1pt solid #77DD77;
+}
+
+.cCategories {
+	background-color: #5cd65c;
+	border-color: #5cd65c;
+	color: white;
+}
+
+#dLi>a, #dLi.active>a, #dLi.active>a:hover, #dLi.active>a:focus {
+	color: #fff;
+	background-color: #ff6e66;
+	border: 1pt solid #ff6e66;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#D {
+	background-color: #ff6e66;
+	padding:5pt;
+	border: 1pt solid #ff6e66;
+}
+
+.dCategories {
+	background-color: #ff554d;
+	border-color: #ff554d;
+	color: white;
+}
+
+#eLi>a, #eLi.active>a, #eLi.active>a:hover, #eLi.active>a:focus {
+	color: #fff;
+	background-color: #f8b88b;
+	border: 1pt solid #f8b88b;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#E {
+	background-color: #f8b88b;
+	padding:5pt;
+	border: 1pt solid #f8b88b;
+}
+
+.eCategories {
+	background-color: #f7a76e;
+	border-color: #f7a76e;
+	color: white;
+}
+
+#fLi>a, #fLi.active>a, #fLi.active>a:hover, #fLi.active>a:focus {
+	color: #fff;
+	background-color: #f7e58e;
+	border: 1pt solid #f7e58e;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#F {
+	background-color: #f7e58e;
+	padding:5pt;
+	border: 1pt solid #f7e58e;
+}
+
+.submitRadio {
+	width: 100%;
+}
+
+.submitRadio label.btn {
+	width: 33.333333%;
+}
+
+.submitRadio label.btn span {
+	font-size: 2vw;
+}
+
+.submitRadio[data-toggle="buttons"] label {
+	color: white;
+	background: #f5df70 !important;
+	border: #f5df70 !important;
+}
+
+.submitRadio[data-toggle="buttons"] label.active, 
+.submitRadio[data-toggle="buttons"] label:hover, 
+.submitRadio[data-toggle="buttons"] label:focus,
+.submitRadio[data-toggle="buttons"] label.active:hover,
+.submitRadio[data-toggle="buttons"] label.active:focus {
+	color: white;
+	background: #f3da58 !important;
+	border: #f3da58 !important;
+}
+
+#submitArticle {
+	font-size: 2vw;
+	color: white;
+	background: #f5df70 !important;
+	border: #f5df70 !important;
+}
+
+#submitArticle:hover, 
+#submitArticle:focus {
+	color: white;
+	background: #f3da58 !important;
+	border: #f3da58 !important;
+}
+
+#gLi>a, #gLi.active>a, #gLi.active>a:hover, #gLi.active>a:focus {
+	color: #fff;
+	background-color: #ff9e99;
+	border: 1pt solid #ff9e99;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#G {
+	background-color: #ff9e99;
+	padding:5pt;
+	border: 1pt solid #ff9e99;
+}
+
+#deleteArticle {
+	font-size: 2vw;
+	color: white;
+	background: #ff8680 !important;
+	border: #ff8680 !important;
+}
+
+#deleteArticle:hover, 
+#deleteArticle:focus {
+	color: white;
+	background: #ff6e66 !important;
+	border: #ff6e66 !important;
+}
+
+#hLi>a, #hLi.active>a, #hLi.active>a:hover, #hLi.active>a:focus {
+	color: #fff;
+	background-color: #baed91;
+	border: 1pt solid #baed91;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#H {
+	background-color: #baed91;
+	padding:5pt;
+	border: 1pt solid #baed91;
+}
+
+.updateRadio {
+	width: 100%;
+}
+
+.updateRadio label.btn {
+	width: 33.333333%;
+}
+
+.updateRadio label.btn span {
+	font-size: 2vw;
+}
+
+.updateRadio[data-toggle="buttons"] label {
+	color: white;
+	background: #9fe765 !important;
+	border: #9fe765 !important;
+}
+
+.updateRadio[data-toggle="buttons"] label.active, 
+.updateRadio[data-toggle="buttons"] label:hover, 
+.updateRadio[data-toggle="buttons"] label:focus,
+.updateRadio[data-toggle="buttons"] label.active:hover,
+.updateRadio[data-toggle="buttons"] label.active:focus {
+	color: white;
+	background: #92e34f !important;
+	border: #92e34f !important;
+}
+
+#updateArticle {
+	font-size: 2vw;
+	color: white;
+	background: #9fe765 !important;
+	border: #9fe765 !important;
+}
+
+#updateArticle:hover, 
+#updateArticle:focus {
+	color: white;
+	background: #92e34f !important;
+	border: #92e34f !important;
+}
+
+#iLi>a, #iLi.active>a, #iLi.active>a:hover, #iLi.active>a:focus {
+	color: #fff;
+	background-color: #b2cefe;
+	border: 1pt solid #b2cefe;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#I {
+	background-color: #b2cefe;
+	padding:5pt;
+	border: 1pt solid #b2cefe;
+}
+
+.iCategories {
+	background-color: #9bbffd;
+	border-color: #9bbffd;
+	color: white;
+}
+
+#jLi>a, #jLi.active>a, #jLi.active>a:hover, #jLi.active>a:focus {
+	color: #fff;
+	background-color: #f2a2e8;
+	border: 1pt solid #f2a2e8;
+	border-bottom: none;
+	border-top-right-radius: 5pt;
+	border-top-left-radius: 5pt;
+}
+
+#J {
+	background-color: #f2a2e8;
+	padding:5pt;
+	border: 1pt solid #f2a2e8;
+}
+
+.jRadio {
+	width: 100%;
+}
+
+.jRadio label.btn {
+	width: 33.333333%;
+}
+
+.jRadio label.btn span {
+	font-size: 2vw;
+}
+
+.jRadio[data-toggle="buttons"] label{
+	color: white;
+	background: #ef8fe2 !important;
+	border: #ef8fe2 !important;
+}
+
+.jRadio[data-toggle="buttons"] label.active, 
+.jRadio[data-toggle="buttons"] label:hover, 
+.jRadio[data-toggle="buttons"] label:focus,
+.jRadio[data-toggle="buttons"] label.active:hover,
+.jRadio[data-toggle="buttons"] label.active:focus {
+	color: white;
+	background: #ec79dd !important;
+	border: #ec79dd !important;
+}
+
+#contactSubmission {
+	font-size: 2vw;
+	color: white;
+	background: #ef8fe2 !important;
+	border: #ef8fe2 !important;
+}
+
+#contactSubmission:hover, 
+#contactSubmission:focus {
+	color: white;
+	background: #ec79dd !important;
+	border: #ec79dd !important;
+}
